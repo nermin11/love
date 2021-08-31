@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let n = loveCalculator();
+       let ad= prompt("Sənin adın");
+       let ad1 = prompt("Onun adı");
+        
+        function loveCalculator(){
+            let love =Math.random()*100;
+            love = Math.floor(love + 1);
+            return love;
+        }
+        if (n > 70){
+            alert ("Sizin uyğunluğunuz  "+ n+" % + siz evlənə bilərsiz");
+        }else
+        if (n < 70 && n > 30){
+            alert ("Sizin uyğunluğunuz  "+ n+" % + siz ancaq yata bilərsiz");
+        }else
+        if (n < 30){
+            alert ("Sizin uyğunluğunuz "+ n+" % + siz gedin ölün");
+        }
+    </script>
+</body>
+</html>
